@@ -3,7 +3,7 @@
 body=`python3 upload_menu.py`
 
 
-curl -X "POST" "https://api.staging.deliverect.com/productAndCategories" \
+curl -s -X "POST" "https://api.staging.deliverect.com/productAndCategories" \
     -H 'Content-Type: application/json' \
     -H 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IlJUWkVNakV5TVVZeVJqazJPRGs1TkRjMVF6QXpNMFE1UTBFek1UazNPRFZGTkVJeFF6YzFRZyJ9.eyJpc3MiOiJodHRwczovL2RlbGl2ZXJlY3QuZXUuYXV0aDAuY29tLyIsInN1YiI6ImF5cnRqNFR6bXRxUWxqQmxoMWpnRm9SN2ZEZEtRZkZwQGNsaWVudHMiLCJhdWQiOiJodHRwczovL2FwaS5kZWxpdmVyZWN0LmNvbSIsImlhdCI6MTU3Mjk3Mzc2OCwiZXhwIjoxNTczMDYwMTY4LCJhenAiOiJheXJ0ajRUem10cVFsakJsaDFqZ0ZvUjdmRGRLUWZGcCIsImd0eSI6ImNsaWVudC1jcmVkZW50aWFscyJ9.bO89rJpNUfPKmMKwL-L_JIPzLGsDbq2kz4ImYe5ia_vpYVcwMXafGYrrxwgavtnha74cK_SBVE4Jo5PCYItDCDXEMlf786xwCmKX9Ha_3QYB92LxiF-pmmSQd3T_HHLnkFcHaMcaqo0M_6878BVgI-ZevXdh7l_kObhlSl8wo7S1Dddg9O6q0DRCPWTtluMh2T6_lU57FrXrOz39Z9MXkFQqRtv7trDN-nw_ZyItkxWrWqwxhDGqmQmW2R6Ib91kCGHjMLyuu8jfV9bRcyj2EkwfYwjhfR9UHDFNCbyq5EE1HXLvGNDd5nW8s7MBcUEfxIFCzEjH908ZwAySyzqjUQ' \
     -d "$body"
@@ -11,7 +11,7 @@ curl -X "POST" "https://api.staging.deliverect.com/productAndCategories" \
 exit
 
 
-curl -X "POST" "https://api.staging.deliverect.com/productAndCategories" \
+curl -s  -X "POST" "https://api.staging.deliverect.com/productAndCategories" \
     -H 'Content-Type: application/json' \
     -H 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IlJUWkVNakV5TVVZeVJqazJPRGs1TkRjMVF6QXpNMFE1UTBFek1UazNPRFZGTkVJeFF6YzFRZyJ9.eyJpc3MiOiJodHRwczovL2RlbGl2ZXJlY3QuZXUuYXV0aDAuY29tLyIsInN1YiI6ImF5cnRqNFR6bXRxUWxqQmxoMWpnRm9SN2ZEZEtRZkZwQGNsaWVudHMiLCJhdWQiOiJodHRwczovL2FwaS5kZWxpdmVyZWN0LmNvbSIsImlhdCI6MTU3Mjk3Mzc2OCwiZXhwIjoxNTczMDYwMTY4LCJhenAiOiJheXJ0ajRUem10cVFsakJsaDFqZ0ZvUjdmRGRLUWZGcCIsImd0eSI6ImNsaWVudC1jcmVkZW50aWFscyJ9.bO89rJpNUfPKmMKwL-L_JIPzLGsDbq2kz4ImYe5ia_vpYVcwMXafGYrrxwgavtnha74cK_SBVE4Jo5PCYItDCDXEMlf786xwCmKX9Ha_3QYB92LxiF-pmmSQd3T_HHLnkFcHaMcaqo0M_6878BVgI-ZevXdh7l_kObhlSl8wo7S1Dddg9O6q0DRCPWTtluMh2T6_lU57FrXrOz39Z9MXkFQqRtv7trDN-nw_ZyItkxWrWqwxhDGqmQmW2R6Ib91kCGHjMLyuu8jfV9bRcyj2EkwfYwjhfR9UHDFNCbyq5EE1HXLvGNDd5nW8s7MBcUEfxIFCzEjH908ZwAySyzqjUQ' \
     -d $'{
